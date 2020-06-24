@@ -1,0 +1,561 @@
+﻿ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{$SiteName/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?v={ZL.Label id="前端样式版本号"/}" rel="stylesheet" />
+<script src="/js/neuron.js" type="text/javascript"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+						   
+    $(".sort-list>ul>li").hover(function(){
+        $(this).addClass("hover")
+    },function(){
+        $(this).removeClass("hover")
+    });
+   
+});
+</script>
+</head> 
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<a href="#">登录</a>
+<a href="#">注册</a>      
+</div>
+<div class="home_top_r">
+<a href="#">商家中心</a>
+<a href="#">手机版</a>
+<a href="#">服务中心</a>
+</div>
+</div>
+</div>
+
+<div class="container home_logo">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="home_logo_l">
+<a href="#"><embed pluginspage="http://www.adobe.com/svg/viewer/install/" src="{$CssDir/}images/logo.svg" type="image/svg+xml" /></a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col-md-offset-1">
+<div class="home_logo_r">
+<div class="input-group">
+<input type="text" class="form-control" placeholder="搜索商户名，地址，菜名，外卖等">
+<span class="input-group-btn">
+<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+</span>
+</div><!-- /input-group -->
+</div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-default home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<a class="navbar-brand visible-xs" href="/"><embed pluginspage="http://www.adobe.com/svg/viewer/install/" src="{$CssDir/}images/logo.svg" type="image/svg+xml" /></a>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav nav_list">
+<li><a href="/">首页</a></li>
+<li><a href="#">商城中心</a></li>
+<li><a href="#">品牌名店</a></li> 
+<li><a href="#">便宜购</a></li>
+<li><a href="#">附近</a></li>
+<li><a href="#">有机农庄</a></li>
+<li><a href="#">生活缴费</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="home_content">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 home_l">
+<div class="sort">
+<div class="sort-list">
+<ul>
+<li>
+<a href="#" class="name"><span>美食</span></a><a href="#" class="item">火锅</a><a href="#" class="item sort-list-1">人气聚餐</a>
+<ul>
+<li><a href="#">火锅</a></li>
+<li><a href="#">自助餐</a></li>
+<li><a href="#">烧烤</a></li>
+<li><a href="#">粤菜</a></li>
+<li><a href="#">面包甜点</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>电影</span></a><a href="#" class="item">热映影院</a><a href="#" class="item sort-list-1">电影院</a>
+<ul>
+<div class="second_title">热映电影</div>
+<li><a href="#">嘉禾电影院</a></li>
+<li><a href="#">万达影城</a></li>
+<li><a href="#">万众国际影城</a></li>
+<li><a href="#">深圳戏院</a></li>
+<li><a href="#">太平洋电影院</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>休闲娱乐</span></a><a href="#" class="item">足疗</a><a href="#" class="item sort-list-1">ktv</a>
+<ul>
+<li><a href="#">KTV</a></li>
+<li><a href="#">足疗</a></li>
+<li><a href="#">咖啡厅</a></li>
+<li><a href="#">音乐节</a></li>
+<li><a href="#">酒吧</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>运动健身</span></a><a href="#" class="item sort-list-1">健身中心</a>
+<ul>
+<li><a href="#">瑜伽</a></li>
+<li><a href="#">舞蹈</a></li>
+<li><a href="#">羽毛球馆</a></li>
+<li><a href="#">篮球场</a></li>
+<li><a href="#">武术</a></li>
+<li><a href="#">高尔夫场</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>酒店</span></a><a href="#" class="item">经济性</a><a href="#" class="item sort-list-1">五星级</a>
+<ul>
+<li><a href="#">精品旅社</a></li>
+<li><a href="#">五星级</a></li>
+<li><a href="#">四星级</a></li>
+<li><a href="#">三星级</a></li>
+<li><a href="#">青年旅社</a></li>
+<li><a href="#">度假村</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>酒店</span></a><a href="#" class="item">经济性</a><a href="#" class="item sort-list-1">五星级</a>
+<ul>
+<li><a href="#">精品旅社</a></li>
+<li><a href="#">五星级</a></li>
+<li><a href="#">四星级</a></li>
+<li><a href="#">三星级</a></li>
+<li><a href="#">青年旅社</a></li>
+<li><a href="#">度假村</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>酒店</span></a><a href="#" class="item">经济性</a><a href="#" class="item sort-list-1">五星级</a>
+<ul>
+<li><a href="#">精品旅社</a></li>
+<li><a href="#">五星级</a></li>
+<li><a href="#">四星级</a></li>
+<li><a href="#">三星级</a></li>
+<li><a href="#">青年旅社</a></li>
+<li><a href="#">度假村</a></li>
+</ul>
+</li>
+<li>
+<a href="#" class="name"><span>酒店</span></a><a href="#" class="item">经济性</a><a href="#" class="item sort-list-1">五星级</a>
+<ul>
+<li><a href="#">精品旅社</a></li>
+<li><a href="#">五星级</a></li>
+<li><a href="#">四星级</a></li>
+<li><a href="#">三星级</a></li>
+<li><a href="#">青年旅社</a></li>
+<li><a href="#">度假村</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="home_l_hot">
+<b>热门榜单</b>
+<ul>
+<li><a href="">【南昌】芝士控已沦陷！这些芝...</a>
+<p>12家商户<em>|</em>0人浏览</p>
+</li>
+<li><a href="">我经常去的5家影院</a>
+<p>5家商户<em>|</em>0人浏览</p>
+</li>
+<li><a href="">南昌小吃街</a>
+<p>40家商户<em>|</em>0人浏览</p>
+</li>
+<li><a href="">春天里，南昌那些唤醒味蕾的酸...</a>
+<p>10家商户<em>|</em>0人浏览</p></li>
+<li><a href="">春天里，南昌那些唤醒味蕾的酸...</a>
+<p>10家商户<em>|</em>0人浏览</p></li>
+</ul>
+
+
+</div>
+
+
+<div class="home_l_ad">
+<img src="{$CssDir/}Images/ad_1.jpg" alt="广告"/>
+
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-sx-12 home_center" >
+<div id="carousel-example-generic" class="carousel slide home_banner" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active home_banner1">
+<div class="container">
+<div class="row">
+
+</div>
+</div>
+</div>
+<div class="item home_banner2">
+<div class="container">
+<div class="row">
+
+</div>
+</div>
+<div class="carousel-caption">
+</div>
+</div>
+<div class="item home_banner3">
+
+<div class="carousel-caption">
+</div>
+</div>
+</div>
+</div>
+<div class="home_hot">
+<div class="home_hot_t"><a href="#">更多</a><b>热门导航</b></div>
+<ul class="term-list block-inner Fix">
+<li class="term-list-item">
+<strong class="term">分类:</strong>
+<ul class="hot_second">
+<li><a href="#">火锅</a></li>
+<li><a href="#">川菜</a></li>
+<li><a href="#">日本料理</a></li>
+<li><a href="#">湘菜</a></li>
+<li><a href="#">电影院</a></li>
+<li><a href="#">海鲜</a></li>
+<li><a href="#">美发</a></li>
+<li><a href="#">西餐</a></li>
+<li><a href="#">韩国料理</a></li>
+<li><a href="#">全部分类</a></li>
+</ul>
+</li>
+<li class="term-list-item">
+<strong class="term">分类:</strong>
+<ul class="hot_second">
+<li><a href="#">火锅</a></li>
+<li><a href="#">川菜</a></li>
+<li><a href="#">日本料理</a></li>
+<li><a href="#">湘菜</a></li>
+<li><a href="#">电影院</a></li>
+<li><a href="#">海鲜</a></li>
+<li><a href="#">美发</a></li>
+<li><a href="#">西餐</a></li>
+</ul>
+</li>
+<li class="term-list-item">
+<strong class="term">分类:</strong>
+<ul class="hot_second">
+<li><a href="#">火锅</a></li>
+<li><a href="#">川菜</a></li>
+<li><a href="#">日本料理</a></li>
+<li><a href="#">湘菜</a></li>
+<li><a href="#">电影院</a></li>
+<li><a href="#">海鲜</a></li>
+<li><a href="#">美发</a></li>
+<li><a href="#">西餐</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div class="home_c_content">
+<div class="home_c_t"><a href="#">更多</a><b>精选内容</b></div>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_c_content_r">
+<img src="{$CssDir/}Images/news.png" alt="精选内容"/>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home_c_content_r">
+ <b> <a href="#">花开四月，吃喝玩乐好心情</a></b>
+  <p>人间最美四月天，来晒晒你的好心情...<a href="#">全文</a></p>
+<ul>
+<li> <a href="#">[榜单精选] 你侬我侬的约会圣地</a></li>  
+<li> <a href="#">[有料放送] 万达金街 缸桶屋</a></li>    
+<li> <a href="#">[社区热帖] 不一样的泰式风格</a></li>
+<li><a href="#">[小编推荐]冬至美食你最爱哪一块？</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="home_person">
+<div class="home_c_t"><a href="#">精彩活动</a><b>人生大事</b></div>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_person_img">
+<a href="#"><img src="{$CssDir/}Images/person1.jpg"/></a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_person_img">
+<a href="#"><img src="{$CssDir/}Images/person2.jpg"/></a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_person_img">
+<a href="#"><img src="{$CssDir/}Images/person3.jpg"/></a>
+</div>
+</div>
+</div>
+
+<div class="home_city">
+<div class="home_c_t"><a href="#">更多</a><b>最新同城活动</b></div>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_c_content_s">
+<a href="#"><img src="{$CssDir/}Images/city1.jpg"/></a>
+<p> <a href="#">【会员聚会】2016.4.30来千百味味道先锋店大吃大喝喽！</a> </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_c_content_s">
+<a href="#"><img src="{$CssDir/}Images/city2.jpg"/></a>
+<p> <a href="#">【免费体验】2016.4.24和千百味共赴艾溪湖自行车踏春会</a> </p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_c_content_s">
+<a href="#"><img src="{$CssDir/}Images/city3.jpg"/></a>
+<p> <a href="#">【免费体验】慕佳精品西餐咖啡绿地广场店，百份双人饮品任性送！</a></p>
+</div>
+</div>
+</div>
+
+<div class="home_vip">
+<div class="home_c_t"><a href="#">申请VIP</a><b>VIP之星</b></div>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-sx-12 home_vip_l">
+
+<div class="vip_name"><div class="vip">VIP</div><a href="#">steph...</a>
+<div class="clearfix"></div>
+<span><i class="fa fa-diamond"></i></span>
+</div>
+<a href="#"><img  src="{$CssDir/}Images/vip1.jpg"  alt="vip1"/></a>
+<button type="button" class="btn btn-warning">+关注</button>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-sx-12 home_vip_l">
+
+<div class="vip_name"><div class="vip">VIP</div><a href="#">娜娜娜.</a>
+<div class="clearfix"></div>
+<span><i class="fa fa-diamond"></i></span>
+</div>
+<a href="#"><img  src="{$CssDir/}Images/vip2.jpg"  alt="vip1"/></a>
+<button type="button" class="btn btn-warning">+关注</button>
+</div>
+</div>
+</div>
+
+<div class="home_comment">
+<div class="home_c_t"><b>最新点评</b></div>
+<div class="home_dian_column">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 ">
+<a href="#"><img src="{$CssDir/}images/face1.jpg" alt=""></a>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 home_column">
+<a href="#"> 配角917@正新鸡排(维也纳店)</a>
+<div class="comment_list">
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star"></i></span>
+<span>口味:4  环境: 3   服务: 4</span>
+<span class="dian_zhi">16-04-18 18:49 </span></div>
+<p class="home_text">满意，环境不错，价格合适，就是门口等位置的地方太小了。</p>
+<div class="home_comment_more"><a href="#">全文</a></div>
+</div>
+</div>
+</div>
+
+<div class="home_dian_column">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 ">
+<a href="#"><img src="{$CssDir/}images/face3.jpg" alt=""></a>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 home_column">
+<a href="#">
+吴燕华111@留影迹餐吧    </a>
+<div class="comment_list">
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star"></i></span>
+<span>口味:4  环境: 3   服务: 4</span>
+<span class="dian_zhi">16-04-18 18:49 </span></div>
+<p class="home_text">满意，环境不错，价格合适，就是门口等位置的地方太小了。</p>
+<div class="home_comment_more"><a href="#">全文</a></div>
+</div>
+</div>
+</div>
+
+<div class="home_dian_column">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 ">
+<a href="#"><img src="{$CssDir/}images/face2.jpg" alt=""></a>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10 home_column">
+<a href="#">vagas325@慢时光私人影咖(中山路店) </a>
+<div class="comment_list">
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star yelcolor"></i></span>
+<span><i class="fa fa-star"></i></span>
+<span>口味:4  环境: 3   服务: 4</span>
+<span class="dian_zhi">16-04-18 18:49 </span></div>
+<p class="home_text">满意，环境不错，价格合适，就是门口等位置的地方太小了。</p>
+<div class="home_comment_more"><a href="#">全文</a></div>
+</div>
+</div>
+</div>
+</div>	
+</div>
+ 
+ 
+<div class="col-lg-3 col-md- col-sm-3 col-sx-12">
+<div class="home_r">
+<b>热门团购</b>
+<ul>
+<li>
+<a href="#"><img src="{$CssDir/}Images/h1.jpg" alt="商品1">
+<div class="home_r_t">
+<b>太兴餐厅代金券一份</b><p>7店通用</p>
+<span class="price"> 
+<em>¥95</em> <del>¥100</del> </span>
+</div>
+</a>
+</li>
+<li>
+<a href="#"><img src="{$CssDir/}Images/h2.jpg" alt="商品1">
+<div class="home_r_t">
+<b>太兴餐厅代金券一份</b><p>7店通用</p>
+<span class="price"> 
+<em>¥95</em> <del>¥100</del> </span>
+</div>
+</a>
+</li>
+<li>
+<a href="#"><img src="{$CssDir/}Images/h3.jpg" alt="商品1">
+<div class="home_r_t">
+<b>太兴餐厅代金券一份</b><p>7店通用</p>
+<span class="price"> 
+<em>¥95</em> <del>¥100</del> </span>
+</div>
+</a>
+</li>
+<li>
+<a href="#"><img src="{$CssDir/}Images/h4.jpg" alt="商品1">
+<div class="home_r_t">
+<b>太兴餐厅代金券一份</b><p>7店通用</p>
+<span class="price"> 
+<em>¥95</em> <del>¥100</del> </span>
+</div>
+</a>
+</li>
+<li>
+<a href="#"><img src="{$CssDir/}Images/h5.jpg" alt="商品1">
+<div class="home_r_t">
+<b>太兴餐厅代金券一份</b><p>7店通用</p>
+<span class="price"> 
+<em>¥95</em> <del>¥100</del> </span>
+</div>
+</a>
+</li>
+</ul>
+
+<a href="#" class="more">更多南昌团购</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="home_footer">
+
+<div class="container">
+{$Copyright/}
+</div>
+</div>
+
+<div class="bottom-contrainer" style="display: block;">
+  <div class="bottom-ad">
+    <img class="banner-bottom-bg" src="{$CssDir/}images/ad2.png"><a class="ad-link" onclick="_hip.push(['mv', {module:'globebanner_below',action:'click',pageId:'70'}])" href="#"></a>
+    <div class="qrcode">
+        <span class="qrcode-txt">扫一扫<br>尽享折扣和优惠</span>
+        <div class="qrcode-img"><img class="qrcode-bg-img" src="{$CssDir/}images/code.png"></div>
+    </div>
+    <div class="bottom-close"></div>
+  </div>
+  <div class="bottom-bg"></div>
+</div>
+<div class="bottom-collspan collspan-hide" style="display: block; left: 0px;">
+  <img class="collspan-img" src="http://www.dpfile.com/sc/ares_pics/dd8e44a4f66eb75da6776486db449699.png">
+  <div class="collspan"></div>
+</div>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+	$(".bottom-contrainer").addClass("bottom-hide");
+	$(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+	$(".bottom-contrainer").removeClass("bottom-hide");
+	$(".bottom-collspan").addClass("collspan-hide");	
+})
+</script>

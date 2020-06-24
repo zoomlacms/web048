@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="User_UserFriend_AddFave, App_Web_cn5jp0zi" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

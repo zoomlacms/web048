@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="PayOnline_WxPayReturn, App_Web_sqvdphi0" enableEventValidation="false" viewStateEncryptionMode="Never" %>
